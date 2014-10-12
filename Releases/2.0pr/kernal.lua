@@ -33,11 +33,6 @@ updater.new() -- this will check for any updates for the updater
 updater.update(success, "Cloudpaw", "CP-DOS-BETA") -- first argument is the function to be executed in case of an update second is the username and last is the repostery
 term.clear()
 textutils.slowPrint("Booting CP-DOS")
-bar = gui.createBar( "bar" ) --#This creates a new bar with the name
-
-bar:draw( 5,8,30,colors.white,colors.green,true,colors.black,colors.white ) --#This draws the bar at (5,8) with a length of 30. The first color is the bar color, the second color is the progress color, the next argument is whether or not to display the percent, the third color is the text background color (for displaying the percent) and the fifth is the percent text color.
-
-bar:update( percent ) --#Re-draws the bar with the new percent
 sleep(0.3)
 term.clear()
 sleep(0.5)
